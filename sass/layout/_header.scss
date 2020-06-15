@@ -1,0 +1,32 @@
+
+.social-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+    background-color: $secondary-color;
+    width: 20.5rem;
+    height: 7.7rem;
+}
+
+
+.nav-list {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-left: auto;
+    line-height: 7.7rem;
+    margin-right: 5rem;
+    color: $white-color;
+
+    ul {
+        display: flex;
+        list-style: none;
+
+        li {
+            margin: 0 1rem;
+
+        &:last-child {
+            margin-right: 0;
+            }
+        }
+    }
+}
