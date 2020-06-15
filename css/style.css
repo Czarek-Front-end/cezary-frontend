@@ -25,6 +25,7 @@ body {
   font-weight: 400; }
 
 .social-container {
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   padding: 0 5rem;
@@ -39,10 +40,37 @@ body {
   line-height: 7.7rem;
   margin-right: 5rem;
   color: #fff; }
-  .nav-list ul {
-    display: flex;
-    list-style: none; }
-    .nav-list ul li {
-      margin: 0 1rem; }
-      .nav-list ul li:last-child {
-        margin-right: 0; }
+  .nav-list ul li {
+    margin: 0 1rem;
+    position: relative;
+    display: inline-block;
+    cursor: pointer; }
+    .nav-list ul li .active:before {
+      content: '';
+      background-color: #F8594B;
+      height: 7.7rem;
+      z-index: -1;
+      position: absolute;
+      width: calc(100% + 16px);
+      transform: translate(-8px); }
+  .nav-list ul a {
+    color: #fff;
+    text-decoration: none; }
+
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 12rem;
+  background-color: #151515;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center; }
+  .sidebar span {
+    color: #fff;
+    font-size: 1.6rem;
+    margin: .8rem 0; }
+    .sidebar span:last-child {
+      margin-bottom: 5rem; }

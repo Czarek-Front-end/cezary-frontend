@@ -1,0 +1,11 @@
+@mixin activeClass {
+    .active:before  {
+        content: '';
+        background-color: $secondary-color;
+        height: 7.7rem;
+        z-index: -1;
+        position: absolute;
+        width: calc(100% + 16px); 
+        transform: translate(-8px)
+    }
+}
