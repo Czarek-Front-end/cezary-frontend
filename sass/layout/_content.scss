@@ -1,8 +1,89 @@
 .content {
-    background-color: lightblue;
     width: calc(100% - 12rem);
     height: 100%;
     transform: translate(12rem);
     padding: 2rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.text-container {
+    color: $white-color;
+    text-transform: uppercase;
+
+    h1 {
+        font-size: 5rem;
+        font-weight: 800;
+        line-height: 5.5rem;
+        letter-spacing: .2rem;
+    }
+    h3 {
+        margin-top: 1.5rem;
+        font-weight: 300;
+        font-size: 1.8rem;
+        span {
+            color: $secondary-color;
+            font-weight: 400;
+            letter-spacing: .1rem;
+        }
+    }
+}
+
+
+.square {
+    margin: 0 3rem;
+    position: relative;
+    height: 32.5rem;
+    width: 32.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        width: 100%;
+        height: 100%;
+    }
+   
+    span:nth-child(2) {
+        opacity: 90%;
+        width: 25.9rem;
+        height: 25.9rem;
+    }
+    span:nth-child(3) {
+        opacity: 80%;
+        width: 20.3rem;
+        height: 20.3rem;
+    }
+    span:nth-child(4) {
+        opacity: 70%;
+        width: 16.7rem;
+        height: 16.7rem;
+    }
+    span:nth-child(5) {
+        opacity: 60%;
+        width: 13.3rem;
+        height: 13.3rem;
+    }
+    span:nth-child(6) {
+        opacity: 100%;
+        width: 9.5rem;
+        height: 9.5rem;
+    }
+    span:nth-child(7) {
+        opacity: 100%;
+        width: 6.3rem;
+        height: 6.3rem;
+        background-color: $secondary-color;
+    }
+
+}
+
+.square-border {
+    position: absolute;
+    border: 1px solid $white-color;
+    &:last-child {
+        border-color: $secondary-color;
+    }
 }
