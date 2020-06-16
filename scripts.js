@@ -15,16 +15,16 @@ for (let i = 0; i < menuLength; i++) {
 
 const giveId = () => {
     if(currentLocation === 'http://127.0.0.1:5500/index.html'){
-    span1.style.color = '#F8594B'
+    span1.style.color = '#fc6557'
     }
     if(currentLocation === 'http://127.0.0.1:5500/index2.html'){
-        span2.style.color = '#F8594B'
+        span2.style.color = '#fc6557'
     }
     if(currentLocation === 'http://127.0.0.1:5500/index2.html'){
-        span3.style.color = '#F8594B'
+        span3.style.color = '#fc6557'
     }
     if(currentLocation === 'http://127.0.0.1:5500/index2.html'){
-        span4.style.color = '#F8594B'
+        span4.style.color = '#fc6557'
     }
 }
 
