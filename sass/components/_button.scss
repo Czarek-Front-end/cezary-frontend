@@ -1,0 +1,22 @@
+.cta {
+    position: relative;
+    margin-top: 3rem;
+    background: none;
+    border: none;
+    color: $white-color;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: .2rem;
+
+    &:after {
+        content: '';
+        position: absolute;
+        background-color: $secondary-color;
+        height: 8px;
+        top: 2.2rem;
+        left: 10%;
+        width: 100%;
+        z-index: -1;
+    }
+}
