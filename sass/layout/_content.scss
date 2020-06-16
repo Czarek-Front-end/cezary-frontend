@@ -1,0 +1,8 @@
+.content {
+    background-color: lightblue;
+    width: calc(100% - 12rem);
+    height: 100%;
+    transform: translate(12rem);
+    padding: 2rem;
+    display: flex;
+}
